@@ -18,7 +18,7 @@ body{
 
 .container{
     width: 60%;
-    min-width: 400px;
+    /* min-width: 400px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@ body{
 }
 
 .timer{
-    width: 50%;
+    width: 80%;
     height: 50px;
     background-color: lightyellow;
     border-radius: 5px;
@@ -112,4 +112,45 @@ body{
     color: coral;
     border: 2px solid coral;
     cursor:not-allowed;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 90%;
+        /* min-width: 90vw; */
+    }
+    .timer{
+        width: 80%;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .quotes{
+        width: 80vw;
+        height: 150px;
+        padding: 0;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    #quotes{
+        margin: 5px;
+        padding: 5px;
+        text-justify: auto;
+        font-size: 0.9rem;
+    }
+
+    #input{
+        max-width: 80vw;
+        min-width: 80vw;
+        min-height: 180px;
+        max-height: 180px;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .button{
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+        font-size: 1rem;
+    }
 }
