@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: lightblue;
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightcyan;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px -2px gray;
+}
+
+.heading{
+    color: coral;
+}
+
+.timer{
+    width: 80%;
+    height: 50px;
+    background-color: lightyellow;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: coral;
+    font-size: 1.5rem;
+}
+
+.quotes{
+    width: 55vw;
+    height: 250px;
+    background-color: lightyellow;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid lightblue;
+}
+
+#quotes{
+    margin: 10px;
+    padding: 20px;
+    text-justify: auto;
+    font-size: 1.2rem;
+}
+
+#input{
+    max-width: 55vw;
+    min-width: 55vw;
+    min-height: 180px;
+    max-height: 250px;
+    background-color: lightyellow;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lightblue;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    padding: 23px;
+}
+
+#input::placeholder{
+    color: #aaaaaa;
+}
+
+.correct{
+    color: green;
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+
+.button{
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    border: 2px solid coral;
+    color: coral;
+    background-color: lightcyan;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: lightcyan;
+    background-color: coral;
+}
+
+.button:disabled{
+    background-color: lightgray;
+    color: coral;
+    border: 2px solid coral;
+    cursor:not-allowed;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 90%;
+        /* min-width: 90vw; */
+    }
+    .timer{
+        width: 80%;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .quotes{
+        width: 80vw;
+        height: 150px;
+        padding: 0;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    #quotes{
+        margin: 5px;
+        padding: 5px;
+        text-justify: auto;
+        font-size: 0.9rem;
+    }
+
+    #input{
+        max-width: 80vw;
+        min-width: 80vw;
+        min-height: 180px;
+        max-height: 180px;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .button{
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+        font-size: 1rem;
+    }
+}
